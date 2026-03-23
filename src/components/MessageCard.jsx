@@ -13,17 +13,36 @@ function MessageCard({ isActive }) {
   const curtainHintRef = useRef(null);
   const messageContentRef = useRef(null);
 
-  const message = `Dearest Alexi,
+//   const message = `Dearest Chinkiyaa,
 
-Happy Birthday! 🎂
+// Happy Birthday! 🎂
 
-May your day be filled with endless joy, laughter, and all the things that make you smile. You bring so much light into the world, and I'm so grateful to know you.
+// May your day be filled with endless joy, laughter, and all the things that make you smile. You bring so much light into the world, and I'm so grateful to know you.
 
-Here's to another year of amazing adventures, dreams coming true, and unforgettable memories.
+// Here's to another year of amazing adventures, dreams coming true, and unforgettable memories.
+
+// Cheers to you! 🥂
+
+// — Monojit`;
+
+const message = `
+Dear meri pasandida aurat... nahi..nahi... Meriii Aurattt,
+
+Happyyy Birthdayyy! 🎂
+
+May your day be filled with endless joy, warm laughter, and all the little moments that make your heart glow. You bring so much light into this world—and into my life—and I’m endlessly grateful for you.
+
+You are my world, Chinkiyaa. Truly. I’ll do anything to keep you happy, to protect your smile, and to make every day feel special for you. Having you in my life is the greatest gift I could ever ask for.
+
+Here’s to another year of amazing adventures, dreams coming true, and memories we’ll hold close forever. And here’s to every birthday of yours—because I want to celebrate them all, every single one, for as long as I live… until my very last breath.
 
 Cheers to you! 🥂
 
-— Monojit`;
+Loveeee Youuuu 💗
+
+- your Babyaaa
+
+`;
 
   // Handle page transitions
   useEffect(() => {

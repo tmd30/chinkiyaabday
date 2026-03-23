@@ -30,7 +30,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
   const slides = [
     {
       icon: "✨",
-      text: "It's Your Special Day Alexi!",
+      text: "It's Your Special Day Chinkiyaa!",
       type: "announcement",
     },
     {
@@ -44,7 +44,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
     },
     {
       icon: "✨",
-      text: "Have a look at it, Madam Jiii",
+      text: "Have a look at it, madam jiii",
       type: "announcement",
     },
   ];
@@ -389,7 +389,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                   data-button="message"
                   onClick={() => handleButtonClick("message")}
                 >
-                  💌 Well, I Have a Message for You Madam Ji
+                  💌 Well, I have a message for you my Sweetuuu
                 </button>
               )}
             </div>
@@ -433,7 +433,7 @@ function CelebrationPage({ onComplete, musicPlayerRef }) {
                     "a",
                     "y",
                   ].map((letter, i) => (
-                    <div key={i} className={`bunting-flag flag-${i % 3}`}>
+                    <div key={i} className={`bunting-flag flag-${i % 6}`}>
                       {letter}
                     </div>
                   ))}

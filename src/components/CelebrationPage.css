@@ -414,8 +414,9 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   color: white;
+  text-transform: capitalize;
   padding-top: 30px;
   animation: sway 3s ease-in-out infinite;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -423,16 +424,30 @@
 }
 
 .flag-0 {
-  border-top: 35px solid #00bcd4;
+  border-top: 35px solid #2563eb;
 }
 
 .flag-1 {
-  border-top: 35px solid #8bc34a;
+  border-top: 35px solid #eab308;
   animation-delay: 0.2s;
 }
 
 .flag-2 {
-  border-top: 35px solid #ffeb3b;
+  border-top: 35px solid #ef4444;
+  animation-delay: 0.4s;
+}
+
+.flag-3 {
+  border-top: 35px solid #a855f7;
+}
+
+.flag-4 {
+  border-top: 35px solid #22c55e;
+  animation-delay: 0.2s;
+}
+
+.flag-5 {
+  border-top: 35px solid #ec4899;
   animation-delay: 0.4s;
 }
 

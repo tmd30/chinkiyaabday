@@ -96,16 +96,20 @@ function App() {
           <h1 id="heroTitle">
             {birthdayReached ? (
               <>
-                Happy Birthday <span className="highlight">Alexi</span> 🎂
+                Happy Birthday <span className="highlight">Chinkiyaa</span> 🎂
               </>
             ) : (
               <>
-                Counting down to <span className="highlight">Alexi's</span>{" "}
+                Counting down to <span className="highlight">Chinkiyaa's</span>{" "}
                 special day 🎂
               </>
             )}
           </h1>
-          <p>Hope your day is filled with joy and laughter! 💗</p>
+          {birthdayReached ? (
+            <p>I hope your day is filled with joy, sweet giggles, and everything that makes your heart feel light and loved. 💗</p>
+          ) :
+          <p>Just wait for few hours to see what I have made for you 💗</p>
+          }
         </section>
 
         <Countdown
