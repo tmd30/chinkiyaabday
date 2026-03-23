@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tmd30.github.io/chinkiyaabday",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
