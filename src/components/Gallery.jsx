@@ -10,13 +10,15 @@ function Gallery({ isActive }) {
   const photosRef = useRef([]);
   const lightboxImgRef = useRef(null);
 
+  const [cacheBust] = useState(() => Date.now());
+
   const photos = [
-    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic1.jpg`, alt: "Memory 1" },
-    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic2.jpg`, alt: "Memory 2" },
-    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic3.jpg`, alt: "Memory 3" },
-    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic4.jpg`, alt: "Memory 4" },
-    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic5.jpg`, alt: "Memory 5" },
-    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic6.jpg`, alt: "Memory 6" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic1.jpg?v=${cacheBust}`, alt: "Memory 1" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic2.jpg?v=${cacheBust}`, alt: "Memory 2" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic3.jpg?v=${cacheBust}`, alt: "Memory 3" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic4.jpg?v=${cacheBust}`, alt: "Memory 4" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic5.jpg?v=${cacheBust}`, alt: "Memory 5" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic6.jpg?v=${cacheBust}`, alt: "Memory 6" },
   ];
 
   // Reveal photos with GSAP when page becomes active
