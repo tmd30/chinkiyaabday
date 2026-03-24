@@ -11,12 +11,12 @@ function Gallery({ isActive }) {
   const lightboxImgRef = useRef(null);
 
   const photos = [
-    { src: `${import.meta.env.BASE_URL}/images/pic1.jpeg`, alt: "Memory 1" },
-    { src: `${import.meta.env.BASE_URL}/images/pic2.jpeg`, alt: "Memory 2" },
-    { src: `${import.meta.env.BASE_URL}/images/pic3.jpeg`, alt: "Memory 3" },
-    { src: `${import.meta.env.BASE_URL}/images/pic4.jpeg`, alt: "Memory 4" },
-    { src: `${import.meta.env.BASE_URL}/images/pic5.jpeg`, alt: "Memory 5" },
-    { src: `${import.meta.env.BASE_URL}/images/pic6.jpeg`, alt: "Memory 6" },
+    { src: `${import.meta.env.BASE_URL}images/pic1.jpeg`, alt: "Memory 1" },
+    { src: `${import.meta.env.BASE_URL}images/pic2.jpeg`, alt: "Memory 2" },
+    { src: `${import.meta.env.BASE_URL}images/pic3.jpeg`, alt: "Memory 3" },
+    { src: `${import.meta.env.BASE_URL}images/pic4.jpeg`, alt: "Memory 4" },
+    { src: `${import.meta.env.BASE_URL}images/pic5.jpeg`, alt: "Memory 5" },
+    { src: `${import.meta.env.BASE_URL}images/pic6.jpeg`, alt: "Memory 6" },
   ];
 
   // Reveal photos with GSAP when page becomes active
@@ -40,7 +40,7 @@ function Gallery({ isActive }) {
           stagger: 0.12,
           ease: "back.out(1.4)",
           delay: 0.2,
-        }
+        },
       );
     }
   }, [isActive, photosRevealed]);
@@ -54,7 +54,7 @@ function Gallery({ isActive }) {
       gsap.fromTo(
         lightboxImgRef.current,
         { scale: 0.8, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.4)" }
+        { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.4)" },
       );
     }
   };
@@ -91,7 +91,7 @@ function Gallery({ isActive }) {
           gsap.fromTo(
             lightboxImgRef.current,
             { x: 100, opacity: 0 },
-            { x: 0, opacity: 1, duration: 0.3, ease: "power2.out" }
+            { x: 0, opacity: 1, duration: 0.3, ease: "power2.out" },
           );
         },
       });
@@ -113,7 +113,7 @@ function Gallery({ isActive }) {
           gsap.fromTo(
             lightboxImgRef.current,
             { x: -100, opacity: 0 },
-            { x: 0, opacity: 1, duration: 0.3, ease: "power2.out" }
+            { x: 0, opacity: 1, duration: 0.3, ease: "power2.out" },
           );
         },
       });
