@@ -79,7 +79,7 @@ function App() {
       const newCount = prev + 1;
 
       if (newCount === 6) {
-        setCurrentPage(4); // Trigger page change
+        setCurrentPage(2); // Trigger page change
       }
 
       console.log(specialClickCount)
