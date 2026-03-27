@@ -19,6 +19,18 @@ function Gallery({ isActive }) {
     { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic4.jpg?v=${cacheBust}`, alt: "Memory 4" },
     { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic5.jpg?v=${cacheBust}`, alt: "Memory 5" },
     { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic6.jpg?v=${cacheBust}`, alt: "Memory 6" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic7.jpg?v=${cacheBust}`, alt: "Memory 7" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic8.jpg?v=${cacheBust}`, alt: "Memory 8" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic9.jpg?v=${cacheBust}`, alt: "Memory 9" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic10.jpg?v=${cacheBust}`, alt: "Memory 10" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic11.jpg?v=${cacheBust}`, alt: "Memory 11" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic12.jpg?v=${cacheBust}`, alt: "Memory 12" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic13.jpg?v=${cacheBust}`, alt: "Memory 13" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic14.jpg?v=${cacheBust}`, alt: "Memory 14" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic15.jpg?v=${cacheBust}`, alt: "Memory 15" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic16.jpg?v=${cacheBust}`, alt: "Memory 16" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic17.jpg?v=${cacheBust}`, alt: "Memory 17" },
+    { src: `https://sfweqdtvvcdkndsbwchm.supabase.co/storage/v1/object/public/images/memories/pic18.jpg?v=${cacheBust}`, alt: "Memory 18" },
   ];
 
   // Reveal photos with GSAP when page becomes active

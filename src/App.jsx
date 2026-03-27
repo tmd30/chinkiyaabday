@@ -14,6 +14,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 function App() {
   const [currentPage, setCurrentPage] = useState(1); // Start at 1 for Countdown page
+  const [specialClickCount, setSpecialClickCount] = useState(0);
 
   // ⚠️ FOR TESTING: Comment out lines 18-21 to reset on every reload
   // Check localStorage to persist birthday reached state
@@ -73,6 +74,20 @@ function App() {
     });
   };
 
+  const handleSpecialClick = () => {
+    setSpecialClickCount((prev) => {
+      const newCount = prev + 1;
+
+      if (newCount === 6) {
+        setCurrentPage(4); // Trigger page change
+      }
+
+      console.log(specialClickCount)
+
+      return newCount;
+    });
+  };
+
   const handleBirthdayReached = () => {
     setBirthdayReached(true);
     localStorage.setItem("birthdayReached", "true"); // Persist to localStorage
@@ -101,7 +116,7 @@ function App() {
             ) : (
               <>
                 Counting down to <span className="highlight">Chinkiyaa's</span>{" "}
-                special day 🎂
+                <span onClick={handleSpecialClick}>special</span> day 🎂
               </>
             )}
           </h1>
